@@ -1,0 +1,20 @@
+---
+import {treatments} from '../config/treatments.json';
+---
+
+
+<p class="section-desc">
+    La atención psicológica en trastornos es con enfoque psicoanalítico y sistémico familiar; 
+    las técnicas psicológicas son de acuerdo a las necesidades del paciente; el tratamiento 
+    con pacientes con trastorno es el siguiente:
+</p>
+
+<ol class="treatments-list">
+    {
+        treatments.map(treatment => (
+            <li>{treatment.description}</li>
+        ))
+    }
+</ol>
+
+

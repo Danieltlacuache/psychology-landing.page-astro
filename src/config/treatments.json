@@ -1,0 +1,16 @@
+{
+    "treatments": [
+        {
+            "description": "En caso de sospecha de la existencia de un trastorno se realiza un psicodiagnóstico y en caso de requerir tratamiento psiquiátrico o neurológico se deriva al área correspondiente (deberá acompañarse de un familiar a la o las evaluaciones psicológicas sea o no menor de edad)."
+        },
+        {
+            "description": "En caso de tener un diagnóstico psiquiátrico corroborando la existencia de un trastorno deberá llevar el documento que emite el médico, así como la receta o nombre de fármacos que el paciente consume (el paciente deberá de presentarse acompañado de un familiar si el trastorno es psicótico o esquizofrenias, así como disociativos o disgregativos; o, en los casos que se requiera por el tipo de trastorno que presente el paciente)."
+        },
+        {
+            "description": "Se realiza historia clínica del paciente, por lo cual se requiere de familiar que conozca los pormenores del trastorno desde su inicio y evolución, o tener esta información para el tratamiento terapéutico"
+        },
+        {
+            "description": "Las sesiones con personas que representen peligro para un tercero o para sí mismos, favor de avisar al momento de agendar cita y deberá presentarse a la sesión un familiar que pueda controlar los impulsos del paciente, y dicha atención como tratamiento será con el apoyo del familiar."
+        }
+    ]
+}

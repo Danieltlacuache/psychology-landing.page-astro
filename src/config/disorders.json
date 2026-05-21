@@ -1,0 +1,52 @@
+{
+    "disorders": [
+        {
+            "name": "Depresión",
+            "description": "Trastorno de la personalidad caracterizado por un patrón de comportamiento inusual y extraño."
+        },
+        {
+            "name": "Ansiedad",
+            "description": "Trastorno de la personalidad marcado por una falta de interés en las relaciones sociales y una restricción emocional."
+        },
+        {
+            "name": "Esquizofrenia",
+            "description": "Trastorno de la personalidad que se caracteriza por una instability emocional y una identidad difusa."
+        },
+        {
+            "name": "Psicosis",
+            "description": "Trastorno de la personalidad que se manifiesta a través de una evitación extrema de las relaciones íntimas."
+        },
+        {
+            "name": "Obsesivo-compulsivo",
+            "description": "Trastorno de la personalidad que se caracteriza por una dependencia excesiva de los demás."
+        },
+        {
+            "name": "Estrés post-traumático",
+            "description": "Trastorno de la personalidad que se manifiesta a través de un comportamiento desafiante y desobediente."
+        },
+        {
+            "name": "Disociativos",
+            "description": "Trastorno de la personalidad caracterizado por un sentido excesivo de importancia y un deseo constante de admiración."
+        },
+        {
+            "name": "Disgregativos",
+            "description": "Trastorno de la personalidad que se caracteriza por una falta de empatía y un comportamiento que viola los derechos de los demás."
+        },
+        {
+            "name": "Somáticos (enfermedades psicosomáticas)",
+            "description": "Trastornos de la personalidad que incluyen esquizotipia, esquizoide, límite de la personalidad, apego evitativo, dependiente o disruptivo, narcisismo y antisocial."
+        },
+        {
+            "name": "Del sueño (insommio e hipersomnia)",
+            "description": "Trastornos de la personalidad que incluyen esquizotipia, esquizoide, límite de la personalidad, apego evitativo, dependiente o disruptivo, narcisismo y antisocial."
+        },
+        {
+            "name": "Bipolatidad",
+            "description": "Trastornos de la personalidad que incluyen esquizotipia, esquizoide, límite de la personalidad, apego evitativo, dependiente o disruptivo, narcisismo y antisocial."
+        },
+        {
+            "name": "Trastornos de la personalidad (Esquizotipia, Esquizoide, Límite de la personalidad, Apego evitativo, dependiente o disruptivo, Narcisismo, Antisocial)",
+            "description": "Trastornos de la personalidad que incluyen esquizotipia, esquizoide, límite de la personalidad, apego evitativo, dependiente o disruptivo, narcisismo y antisocial."
+        }
+    ]
+}

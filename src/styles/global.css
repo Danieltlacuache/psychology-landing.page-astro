@@ -3,7 +3,6 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
-
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
@@ -46,6 +45,7 @@ h6 {
 	line-height: 1.2;
 }
 h1 {
+	text-align: center;
 	font-size: 3.052em;
 }
 h2 {
@@ -138,4 +138,104 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+/* =========================================
+   ESTILOS PERSONALIZADOS (Psichology)
+   ========================================= */
+
+/* 1. Estilos para los textos descriptivos */
+.section-title {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: rgb(var(--black));
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.section-desc {
+    background-color: rgba(var(--gray-light), 0.4);
+    border-left: 4px solid var(--accent);
+    padding: 1.2em 1.5em;
+    border-radius: 0 8px 8px 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    line-height: 1.6;
+}
+
+/* 2. Cuadrícula para los Trastornos (Estilo tarjetas/píldoras) */
+.disorders-list {
+    display: grid;
+    /* Esto crea columnas automáticas que se adaptan al celular o PC */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1em;
+    padding: 0;
+    list-style: none; /* Quitamos los puntos por defecto */
+    margin-bottom: 3em;
+}
+
+.disorders-list li {
+    background: #ffffff;
+    border: 1px solid rgb(var(--gray-light));
+    padding: 0.8em 1.2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(var(--gray), 10%);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    font-size: 0.95em;
+}
+
+/* Agregamos un punto de color personalizado antes de cada trastorno */
+.disorders-list li::before {
+    content: "•";
+    color: var(--accent);
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    line-height: 0;
+}
+
+/* Efecto hover: se levantan ligeramente al pasar el ratón */
+.disorders-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(var(--gray), 15%);
+    border-color: var(--accent);
+}
+
+/* 3. Lista de Tratamientos (Estilo pasos numerados) */
+.treatments-list {
+    padding: 0;
+    margin-bottom: 3em;
+    list-style: none;
+    counter-reset: treatment-counter; /* Iniciamos un contador para los números */
+}
+
+.treatments-list li {
+    position: relative;
+    background: #ffffff;
+    margin-bottom: 1.5em;
+    padding: 1.5em 1.5em 1.5em 4em; /* Espacio extra a la izquierda para el número */
+    border-radius: 8px;
+    border: 1px solid rgb(var(--gray-light));
+    box-shadow: 0 2px 4px rgba(var(--gray), 10%);
+    line-height: 1.6;
+}
+
+/* Círculos con el número del paso */
+.treatments-list li::before {
+    counter-increment: treatment-counter;
+    content: counter(treatment-counter);
+    position: absolute;
+    left: 1.2em;
+    top: 1.5em;
+    background: var(--accent);
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9em;
 }

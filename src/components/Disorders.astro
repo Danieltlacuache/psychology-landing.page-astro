@@ -1,0 +1,18 @@
+---
+
+import {disorders} from '../config/disorders.json';
+
+---
+
+
+<p class="section-title">
+    Atención terapéutica en los siguientes trastornos psicológicos:
+</p>
+
+<ul class="disorders-list">
+    {
+        disorders.map(disorder => (
+            <li>{disorder.name}</li>
+        ))
+    }
+</ul>
