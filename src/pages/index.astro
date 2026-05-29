@@ -5,6 +5,8 @@ import Header from '../components/Header.astro';
 import Disorders from '../components/Disorders.astro';
 import Treatments from '../components/Treatments.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import logoGrande from '../assets/images/logo_grande.jpeg';
 ---
 
 <!doctype html>
@@ -15,7 +17,8 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1 class="text-justify">Bienvenido a Psichology el Tocayo!</h1>
+			<h1 class="text-justify">Psiique & Soma</h1>
+			<Image src={logoGrande} alt="Psiique & Soma" />
 			<Disorders />
 			<Treatments />
 		</main>
