@@ -4,9 +4,11 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import Disorders from '../components/Disorders.astro';
 import Treatments from '../components/Treatments.astro';
+import Info from '../components/InfoClinic.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { Image } from 'astro:assets';
 import logoGrande from '../assets/images/logo_grande.jpeg';
+import ScrollAnimation from '../components/ScrollAnimation.astro';
 ---
 
 <!doctype html>
@@ -18,9 +20,9 @@ import logoGrande from '../assets/images/logo_grande.jpeg';
 		<Header />
 		<main>
 			<h1 class="text-justify">Psiique & Soma</h1>
-			<Image src={logoGrande} alt="Psiique & Soma" />
-			<Treatments />
+			<Info />
 		</main>
 		<Footer />
+		<ScrollAnimation />
 	</body>
 </html>

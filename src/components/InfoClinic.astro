@@ -1,0 +1,356 @@
+---
+// src/components/InfoClinica.astro
+import { Image } from 'astro:assets';
+import logoGrande from '../assets/images/logo_grande.jpeg';
+---
+
+<section class="clinic-info">
+
+    <div class="logo-fondo">
+        <Image src={logoGrande} alt="Fondo Psiique & Soma" />
+    </div>
+    
+    <!-- VIDEO DE INDUCCIÓN -->
+    <div class="media-placeholder video-wrapper">
+        <video controls poster="">
+            <source src="" type="video/mp4" />
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <span class="placeholder-text">Video de Inducción</span>
+    </div>
+
+    <h2 class="main-quote reveal">“Tu bienestar integral es nuestra prioridad”</h2>
+
+    <!-- IMAGEN PRINCIPAL -->
+    <div class="media-placeholder image-wrapper">
+        <img src="" alt="Instalaciones de Psique & Soma" />
+        <span class="placeholder-text">Imagen de Instalaciones</span>
+    </div>
+
+    <p class="intro-text reveal">
+        En <strong>Psique & Soma</strong> entendemos que el ritmo de la vida actual —entre el trabajo, los estudios, el hogar y los compromisos diarios— a veces puede volverse abrumador. Es completamente natural que estas exigencias generen un desequilibrio emocional que afecte tus relaciones, tu desempeño laboral o tu paz personal.
+    </p>
+
+    <!-- IMAGEN PEQUEÑA -->
+    <div class="media-placeholder image-wrapper small">
+        <img src="" alt="Detalle de atención" />
+        <span class="placeholder-text">Imagen Pequeña</span>
+    </div>
+
+    <blockquote class="accent-quote reveal">
+        “Reconocer que necesitas un espacio para ti no es una debilidad, sino un acto de valentía y amor propio.”
+    </blockquote>
+
+    <div class="text-block reveal">
+        <h3>Una atención oportuna cambia vidas</h3>
+        <p class="diagram-intro">
+            Creemos firmemente que la salud mental es un derecho fundamental, no un lujo. Una atención psicológica a tiempo no solo alivia el malestar, sino que transforma positivamente tu calidad de vida y la de tu entorno.
+        </p>
+    </div>
+
+    <!-- SECCIÓN TIPO DIAGRAMA 1 -->
+    <div class="diagram-section reveal">
+        <h3>¿Cómo te acompañamos?</h3>
+        <div class="grid-cards">
+            <div class="card">
+                <h4>Enfoque personalizado</h4>
+                <p>Diseñamos un plan terapéutico adaptado estrictamente a tus necesidades, edad y motivo de consulta.</p>
+            </div>
+            <div class="card">
+                <h4>Herramientas profesionales</h4>
+                <p>Te brindamos técnicas psicológicas respaldadas por la ciencia para que puedas recuperar el equilibrio.</p>
+            </div>
+            <div class="card">
+                <h4>Espacio seguro y respetuoso</h4>
+                <p>Un entorno libre de juicios, inclusivo y ético para cada etapa del desarrollo humano (niños, adolescentes y adultos).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- IMAGEN METODOLOGÍA -->
+    <div class="media-placeholder image-wrapper">
+        <img src="" alt="Metodología Sistémica Familiar" />
+        <span class="placeholder-text">Imagen Metodología</span>
+    </div>
+
+    <div class="text-block reveal">
+        <h3>Nuestro Enfoque: La Metodología Sistémica Familiar</h3>
+        <p class="diagram-intro">
+            Nuestra práctica clínica se fundamenta en la <strong>Terapia Sistémica Familiar</strong>. Esto significa que no vemos tus dificultades como un problema individual o aislado, sino como el resultado de la dinámica y las pautas de comunicación dentro de los sistemas en los que te desenvuelves.
+        </p>
+    </div>
+
+    <!-- SECCIÓN TIPO DIAGRAMA 2 -->
+    <div class="diagram-section reveal">
+        <p class="diagram-intro">Nuestra metodología se centra en:</p>
+        <div class="grid-cards">
+            <div class="card">
+                <h4>El contexto sobre el individuo</h4>
+                <p>Analizamos cómo influyen las interacciones familiares y sociales en tu estado emocional.</p>
+            </div>
+            <div class="card">
+                <h4>Transformación de dinámicas</h4>
+                <p>Identificamos aquellos patrones repetitivos o acuerdos invisibles que ya no son funcionales, ayudando a transformarlos en relaciones sanas y colaborativas.</p>
+            </div>
+            <div class="card">
+                <h4>Activación de recursos internos</h4>
+                <p>Consideramos que cada persona y cada familia poseen las herramientas necesarias para sanar; nuestro papel es ayudarte a descubrirlas y potenciarlas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- IMAGEN ATENCIÓN OPORTUNA -->
+    <div class="media-placeholder image-wrapper">
+        <img src="" alt="Atención Oportuna" />
+        <span class="placeholder-text">Imagen Atención</span>
+    </div>
+
+    <!-- SECCIÓN TIPO DIAGRAMA 3 -->
+    <div class="diagram-section reveal">
+        <h3>Una atención oportuna a través de Técnicas Sistémicas</h3>
+        <p class="diagram-intro">
+            Creemos firmemente que la salud mental es un derecho fundamental con un profundo impacto social. Aplicamos técnicas sistémicas avanzadas y respaldadas científicamente, adaptadas estrictamente a la edad de nuestros consultantes y a su motivo de consulta:
+        </p>
+        <div class="grid-cards">
+            <div class="card">
+                <h4>Redefinición del problema</h4>
+                <p>Te ayudamos a mirar tu situación desde una perspectiva nueva y constructiva, transformando las crisis en oportunidades de evolución.</p>
+            </div>
+            <div class="card">
+                <h4>Intervenciones relacionales</h4>
+                <p>Trabajamos con técnicas que modifican la comunicación y las fronteras familiares, promoviendo el respeto, la autonomía y el apoyo mutuo.</p>
+            </div>
+            <div class="card">
+                <h4>Soluciones a tu medida</h4>
+                <p>Diseñamos herramientas y tareas terapéuticas prácticas para romper los círculos viciosos del malestar, respetando los tiempos y procesos de cada etapa del desarrollo humano (niños, adolescentes, adultos y familias).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- IMAGEN PEQUEÑA FINAL -->
+    <div class="media-placeholder image-wrapper small">
+        <img src="" alt="Agenda tu consulta" />
+        <span class="placeholder-text">Imagen Pequeña Final</span>
+    </div>
+
+    <!-- LLAMADA A LA ACCIÓN (CTA) -->
+    <div class="cta-section reveal">
+        <h2>“¡El primer paso hacia tu estabilidad emocional empieza aquí! Regálate la oportunidad de vivir con mayor plenitud. ¡Agenda tu consulta hoy mismo!”</h2>
+    </div>
+
+</section>
+
+<style>
+    .clinic-info {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 0;
+        color: rgb(var(--gray-dark));
+        line-height: 1.8;
+    }
+
+    .media-placeholder {
+        background-color: rgba(var(--gray-light), 0.2);
+        border: 2px dashed rgba(var(--gray-light), 0.8);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        margin: 2.5rem auto;
+        box-shadow: var(--box-shadow);
+    }
+
+    .media-placeholder video,
+    .media-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 2; 
+    }
+
+    .placeholder-text {
+        position: absolute;
+        color: rgb(var(--gray));
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        z-index: 1;
+    }
+
+    .video-wrapper, .image-wrapper {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+    }
+
+    .image-wrapper.small {
+        aspect-ratio: 1 / 1;
+        width: 280px;
+        border-radius: 50%;
+    }
+
+
+    .main-quote {
+        text-align: center;
+        font-size: 2.2rem;
+        color: rgb(var(--accent));
+        margin: 3rem 0;
+        font-style: italic;
+    }
+
+    .intro-text {
+        font-size: 1.15rem;
+        text-align: justify;
+    }
+
+    .accent-quote {
+        border-left: 4px solid rgb(var(--accent));
+        padding: 1.5rem;
+        margin: 3rem 0;
+        font-size: 1.3rem;
+        font-style: italic;
+        color: rgb(var(--black));
+        background: rgba(var(--gray-light), 0.2);
+        border-radius: 0 12px 12px 0;
+    }
+
+    .text-block {
+        margin-bottom: 2.5rem;
+    }
+
+    .text-block h3, .diagram-section h3 {
+        color: rgb(var(--black));
+        margin-bottom: 1rem;
+        border-bottom: 2px solid rgba(var(--gray-light), 0.5);
+        padding-bottom: 0.5rem;
+    }
+
+  
+    .diagram-section {
+        margin: 4rem 0;
+    }
+
+    .diagram-intro {
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .grid-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .card {
+        background-color: var(--accent); /* Aplica el fondo dorado */
+        color: white; /* Texto general en blanco */
+        border: none; /* Quitamos los bordes grises */
+        border-radius: 12px;
+        padding: 2rem 1.5rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Sombra suave para que resalte del fondo blanco */
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        text-align: center;
+    }
+
+    /* Efecto al pasar el mouse por encima */
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.12); /* La sombra crece para dar efecto 3D */
+        background-color: var(--accent-dark); /* Si tienes el dark configurado, oscurece un poco el dorado */
+    }
+
+    /* Título de la tarjeta */
+    .card h4 {
+        color: white; /* Forzamos a que el título sea blanco y no dorado */
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    /* Texto de los párrafos dentro de la tarjeta */
+    .card p {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.9); /* Blanco con 90% de opacidad para darle jerarquía visual */
+    }
+
+    .cta-section {
+        background-color: var(--accent);
+        padding: 3rem 2rem;
+        border-radius: 12px;
+        text-align: center;
+        margin: 4rem 0 2rem 0;
+        box-shadow: var(--box-shadow);
+    }
+
+    .cta-section h2 {
+        margin: 0;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: white;
+    }
+
+    @media (max-width: 720px) {
+        .main-quote {
+            font-size: 1.8rem;
+        }
+        .grid-cards {
+            grid-template-columns: 1fr;
+        }
+        .cta-section h2 {
+            font-size: 1.3rem;
+        }
+        .image-wrapper.small {
+            width: 200px;
+        }
+    }
+
+    .fondo-wrapper {
+        position: relative; 
+        z-index: 1;
+    }
+
+    .logo-fondo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 550px; 
+        z-index: -1; 
+        opacity: 0.12; 
+        pointer-events: none; 
+        
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
+    }
+
+    .logo-fondo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        object-position: top center;
+    }
+
+    .grid-cards .card:nth-child(1) { transition-delay: 0.1s; }
+    .grid-cards .card:nth-child(2) { transition-delay: 0.3s; }
+    .grid-cards .card:nth-child(3) { transition-delay: 0.5s; }
+    
+
+    /* --- DISEÑO DE PIRÁMIDE PARA PANTALLAS GRANDES --- */
+    @media (min-width: 768px) {
+        .grid-cards {
+            grid-template-columns: repeat(2, 1fr); 
+        }
+
+        .grid-cards .card:nth-child(3) {
+            grid-column: 1 / -1; 
+            justify-self: center; 
+            
+            width: calc(50% - 0.75rem); 
+        }
+    }
+</style>

@@ -4,8 +4,8 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+	--accent: #B3933B;
+	--accent-dark: #8A722E;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -238,4 +238,15 @@ hr {
     justify-content: center;
     font-weight: bold;
     font-size: 0.9em;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }

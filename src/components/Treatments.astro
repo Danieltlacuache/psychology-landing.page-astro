@@ -2,14 +2,17 @@
 import {treatments} from '../config/treatments.json';
 ---
 
+<p class="section-title reveal">
+    Protocolo de atención psicológica:
+</p>
 
-<p class="section-desc">
+<p class="section-desc reveal">
     La atención psicológica en trastornos es con enfoque psicoanalítico y sistémico familiar; 
     las técnicas psicológicas son de acuerdo a las necesidades del paciente; el tratamiento 
     con pacientes con trastorno es el siguiente:
 </p>
 
-<ol class="treatments-list">
+<ol class="treatments-list reveal">
     {
         treatments.map(treatment => (
             <li>{treatment.description}</li>

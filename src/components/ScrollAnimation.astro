@@ -1,0 +1,26 @@
+---
+// src/components/ScrollAnimation.astro
+// Este componente no renderiza HTML, solo inyecta la lógica de animación
+---
+
+<script>
+    function inicializarAnimaciones() {
+        const observador = new IntersectionObserver((entradas) => {
+            entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add('active');
+                    observador.unobserve(entrada.target); 
+                }
+            });
+        }, {
+            threshold: 0.15 
+        });
+
+        // Busca TODO lo que tenga la clase .reveal en la página
+        const elementosOcultos = document.querySelectorAll('.reveal');
+        elementosOcultos.forEach((el) => observador.observe(el));
+    }
+
+    // Ejecuta la función
+    inicializarAnimaciones();
+</script>
