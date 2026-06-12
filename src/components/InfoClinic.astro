@@ -2,6 +2,9 @@
 // src/components/InfoClinica.astro
 import { Image } from 'astro:assets';
 import logoGrande from '../assets/images/logo_grande.jpeg';
+import logoChico from '../assets/images/logo_chico.jpeg';
+import PrincipalImage from '../assets/images/instalaciones.jpeg';
+import SmallImage from '../assets/images/instalacion_chica.jpeg';
 ---
 
 <section class="clinic-info">
@@ -23,7 +26,7 @@ import logoGrande from '../assets/images/logo_grande.jpeg';
 
     <!-- IMAGEN PRINCIPAL -->
     <div class="media-placeholder image-wrapper">
-        <img src="" alt="Instalaciones de Psique & Soma" />
+        <Image src= {PrincipalImage} alt="Instalaciones de Psique & Soma" />
         <span class="placeholder-text">Imagen de Instalaciones</span>
     </div>
 
@@ -33,7 +36,7 @@ import logoGrande from '../assets/images/logo_grande.jpeg';
 
     <!-- IMAGEN PEQUEÑA -->
     <div class="media-placeholder image-wrapper small">
-        <img src="" alt="Detalle de atención" />
+        <Image src= {SmallImage} alt="Detalle de atención" />
         <span class="placeholder-text">Imagen Pequeña</span>
     </div>
 
@@ -127,13 +130,12 @@ import logoGrande from '../assets/images/logo_grande.jpeg';
         </div>
     </div>
 
-    <!-- IMAGEN PEQUEÑA FINAL -->
+
     <div class="media-placeholder image-wrapper small">
-        <img src="" alt="Agenda tu consulta" />
+        <Image src={logoChico} alt="Agenda tu consulta" />
         <span class="placeholder-text">Imagen Pequeña Final</span>
     </div>
 
-    <!-- LLAMADA A LA ACCIÓN (CTA) -->
     <div class="cta-section reveal">
         <h2>“¡El primer paso hacia tu estabilidad emocional empieza aquí! Regálate la oportunidad de vivir con mayor plenitud. ¡Agenda tu consulta hoy mismo!”</h2>
     </div>

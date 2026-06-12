@@ -1,0 +1,170 @@
+
+<section class="modalidades-wrapper">
+    <div class="intro-block reveal">
+        <h2>Tú eliges cómo y dónde iniciar tu proceso</h2>
+        <p>
+            En <strong>Psique & Soma</strong> creemos que cuidar tu salud mental y la de tu familia no debe ser un obstáculo en tu rutina, sino una solución que se adapte a tu vida. Por ello, ponemos a tu disposición dos modalidades de atención con el mismo rigor ético, profesionalismo y calidez humana que nos caracteriza.
+        </p>
+    </div>
+
+    <div class="grid-modalidades">
+        
+        <div class="modality-card reveal">
+            <div class="card-header">
+                <h3>Terapia Presencial</h3>
+                <span class="subtitle">Encuentros con calidez y conexión</span>
+            </div>
+            <p class="description">
+                Si buscas un espacio físico exclusivo para ti, libre de las distracciones cotidianas, nuestra modalidad presencial es ideal.
+            </p>
+            <ul class="benefits-list">
+                <li>
+                    <strong>Un entorno seguro:</strong> Nuestras instalaciones están diseñadas para ofrecerte un ambiente de paz, confidencialidad y absoluto respeto.
+                </li>
+                <li>
+                    <strong>Conexión cercana:</strong> Ideal para sesiones familiares o de pareja donde la interacción cara a cara facilita la observación de las dinámicas relacionales y el trabajo con técnicas vivenciales.
+                </li>
+                <li>
+                    <strong>Atención para todas las edades:</strong> La opción más recomendada para procesos infantiles, donde el juego y las herramientas tangibles son clave para su desarrollo terapéutico.
+                </li>
+            </ul>
+        </div>
+
+        <div class="modality-card reveal" style="transition-delay: 0.2s;">
+            <div class="card-header">
+                <h3>Terapia en Línea</h3>
+                <span class="subtitle">Tu bienestar a un clic de distancia</span>
+            </div>
+            <p class="description">
+                El cuidado de tus emociones ya no tiene fronteras. Si el trabajo, los traslados, tus ocupaciones diarias o la distancia geográfica te dificultan asistir a la clínica, nuestra plataforma virtual es la respuesta.
+            </p>
+            <ul class="benefits-list">
+                <li>
+                    <strong>Comodidad y flexibilidad:</strong> Recibe tu sesión desde la tranquilidad de tu hogar, tu oficina o cualquier lugar privado, optimizando tus tiempos al máximo.
+                </li>
+                <li>
+                    <strong>Rompiendo barreras:</strong> Facilitamos el acceso a la salud mental para personas con movilidad reducida, agendas complejas o que se encuentran fuera de la ciudad.
+                </li>
+                <li>
+                    <strong>Efectividad garantizada:</strong> Utilizamos herramientas digitales y plataformas seguras que garantizan la total confidencialidad, aplicando nuestras metodologías y técnicas sistémicas con la misma eficacia que de forma presencial.
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    .modalidades-wrapper {
+        max-width: 960px;
+        margin: 4rem auto;
+        padding: 0 1rem;
+    }
+
+    .intro-block {
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
+
+    .intro-block h2 {
+        color: rgb(var(--black));
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .intro-block p {
+        color: rgb(var(--gray-dark));
+        font-size: 1.1rem;
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .grid-modalidades {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+        .grid-modalidades {
+            grid-template-columns: repeat(2, 1fr); 
+        }
+    }
+
+    .modality-card {
+        background-color: var(--accent); 
+        color: white; 
+        border-radius: 12px;
+        padding: 2.5rem 2rem;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modality-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .card-header {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding-bottom: 1.5rem;
+    }
+
+    .card-header h3 {
+        color: white;
+        font-size: 1.6rem;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .subtitle {
+        display: block;
+        font-size: 1.05rem;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .description {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.95);
+    }
+
+    .benefits-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-grow: 1; 
+    }
+
+    .benefits-list li {
+        margin-bottom: 1.2rem;
+        line-height: 1.6;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.9);
+        position: relative;
+        padding-left: 1.5rem; 
+        text-align: justify;
+    }
+
+    .benefits-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.5rem;
+        width: 8px;
+        height: 8px;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    .benefits-list li strong {
+        color: white; 
+    }
+</style>

@@ -1,0 +1,318 @@
+---
+
+---
+
+<section class="corporate-wrapper">
+    <div class="intro-block reveal">
+        <h2>El aliado estratégico de su empresa</h2>
+        <p class="main-desc">
+            En el panorama empresarial actual, el éxito y la rentabilidad de una organización están directamente vinculados al bienestar integral de sus colaboradores. En México, el cuidado de la salud mental en los centros de trabajo ha dejado de ser solo una alternativa de bienestar para convertirse en una responsabilidad legal y un pilar de responsabilidad social <strong>(NOM-035-STPS)</strong>.
+        </p>
+        <p class="sub-desc">
+            En <strong>Psique & Soma</strong> diseñamos soluciones clínicas y pedagógicas a la medida para mitigar los factores de riesgo psicosocial, promover un entorno organizacional favorable y potenciar el talento de su equipo de trabajo.
+        </p>
+    </div>
+
+    <h3 class="tabs-title reveal">Nuestros servicios corporativos se dividen en dos grandes ejes de intervención:</h3>
+
+    <div class="tabs-container reveal">
+        <div class="tab-buttons">
+            <button class="tab-btn active" data-target="clinica">1. Atención Clínica Especializada</button>
+            <button class="tab-btn" data-target="capacitacion">2. Capacitación y Consultoría</button>
+        </div>
+
+        <div id="clinica" class="tab-content active">
+            <p class="tab-intro">
+                Garantizar el acceso a un soporte psicológico oportuno no solo mitiga el estrés laboral, sino que previene el ausentismo, incrementa la retención de talento y cumple directamente con las disposiciones de atención a trabajadores expuestos a acontecimientos traumáticos severos o vulnerabilidad emocional.
+            </p>
+            <p class="tab-subtitle">Ponemos a su disposición nuestro servicio de psicoterapia con enfoque especializado:</p>
+            
+            <div class="cards-grid">
+                <div class="corp-card">
+                    <h4>Modalidad Presencial</h4>
+                    <p>Sesiones individuales dentro de nuestras instalaciones, en un entorno seguro, confidencial y diseñado exclusivamente para la desconexión del estrés cotidiano.</p>
+                </div>
+                <div class="corp-card">
+                    <h4>Modalidad En Línea (Telepsicología)</h4>
+                    <p>La alternativa más flexible para empresas con esquemas híbridos, personal en campo o sucursales en distintas ubicaciones. A través de plataformas seguras y confidenciales, sus colaboradores acceden a atención profesional a solo un clic de distancia, optimizando tiempos y eliminando barreras geográficas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="capacitacion" class="tab-content">
+            <p class="tab-intro">
+                Un clima laboral armónico se construye a través del desarrollo de habilidades blandas, el fortalecimiento de las relaciones y un liderazgo consciente. Nuestras capacitaciones están diseñadas bajo metodologías dinámicas y prácticas para transformar la cultura de su empresa.
+            </p>
+            
+            <div class="cards-grid">
+                <div class="corp-card">
+                    <h4>Liderazgo Positivo y Comunicación Asertiva</h4>
+                    <p>Formación para directivos y mandos medios orientada a un estilo de gestión empático, eliminando pautas de liderazgo negativo y previniendo la violencia laboral.</p>
+                </div>
+                <div class="corp-card">
+                    <h4>Sentido de Pertenencia y Cultura Organizacional</h4>
+                    <p>Estrategias pedagógicas para alinear los valores del colaborador con los objetivos de la empresa, elevando el orgullo y el compromiso institucional.</p>
+                </div>
+                <div class="corp-card">
+                    <h4>Inteligencia Emocional y Control de Emociones</h4>
+                    <p>Herramientas psicológicas prácticas para el manejo del estrés, la prevención del burnout (desgaste profesional) y la autorregulación en momentos de alta exigencia.</p>
+                </div>
+                <div class="corp-card">
+                    <h4>Trabajo Colaborativo y Sinergia de Equipos</h4>
+                    <p>Dinámicas enfocadas en disolver conflictos relacionales, delimitar funciones de manera sana y fomentar la cooperación interdisciplinaria.</p>
+                </div>
+            </div>
+
+            <div class="flexibility-section mt-4">
+                <h4 class="accent-title">Flexibilidad Total Absoluta: Nos adaptamos a su operación</h4>
+                <p>Sabemos que cada organización tiene dinámicas de tiempo y espacio distintas. Para no interferir con su productividad, ofrecemos total adaptabilidad logística en nuestras capacitaciones:</p>
+                <ul class="check-list">
+                    <li><strong>In Company (En sus instalaciones):</strong> Nos trasladamos directamente a sus centros de trabajo, adaptándonos estrictamente a las jornadas y horarios que mejor se faciliten para su operación.</li>
+                    <li><strong>En nuestras instalaciones:</strong> Su personal puede acudir a nuestras aulas y espacios clínicos, fomentando un cambio de entorno propicio para el aprendizaje y la reflexión.</li>
+                    <li><strong>Outdoor Training (Espacios abiertos):</strong> Diseñamos talleres vivenciales en locaciones al aire libre para fomentar la integración profunda, el trabajo en equipo y la desconexión del entorno cerrado de la oficina.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-corporate reveal">
+        <p class="cta-text">
+            <strong>Invertir en salud mental es asegurar el futuro de su empresa.</strong> Permítanos ayudarle a construir un entorno laboral favorable, saludable y plenamente alineado con la normativa vigente. Contacte hoy a nuestro equipo de consultores corporativos para diseñar un plan de intervención a la medida de su organización.
+        </p>
+        <a href="https://wa.me/+523317589990" class="btn-primary">Solicitar Diagnóstico o Cotización Corporativa</a>
+    </div>
+
+</section>
+
+<script>
+    function inicializarTabs() {
+        const botones = document.querySelectorAll('.tab-btn');
+        const contenidos = document.querySelectorAll('.tab-content');
+
+        botones.forEach(boton => {
+            boton.addEventListener('click', () => {
+                botones.forEach(b => b.classList.remove('active'));
+                contenidos.forEach(c => c.classList.remove('active'));
+
+                boton.classList.add('active');
+
+                const targetId = boton.getAttribute('data-target') || '';
+                const contenidoObjetivo = document.getElementById(targetId);
+                if (contenidoObjetivo) {
+                    contenidoObjetivo.classList.add('active');
+                }
+            });
+        });
+    }
+
+    inicializarTabs();
+</script>
+
+<style>
+    .corporate-wrapper {
+        max-width: 1000px;
+        margin: 4rem auto;
+        padding: 0 1rem;
+        color: rgb(var(--gray-dark));
+    }
+
+    .intro-block {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .intro-block h2 {
+        color: rgb(var(--black));
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .main-desc, .sub-desc {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        max-width: 850px;
+        margin: 0 auto 1.5rem auto;
+        text-align: justify;
+    }
+
+    .tabs-title {
+        text-align: center;
+        color: var(--accent);
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .tabs-container {
+        background: white;
+        border: 1px solid rgba(var(--gray-light), 0.5);
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        overflow: hidden;
+        margin-bottom: 3rem;
+    }
+
+    .tab-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 2px solid rgba(var(--gray-light), 0.5);
+        background-color: rgba(var(--gray-light), 0.1);
+    }
+
+    .tab-btn {
+        flex: 1;
+        min-width: 250px;
+        padding: 1.2rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: rgb(var(--gray));
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .tab-btn:hover {
+        background-color: rgba(var(--accent), 0.1);
+        color: var(--accent);
+    }
+
+    .tab-btn.active {
+        background-color: var(--accent);
+        color: white;
+    }
+
+    .tab-content {
+        display: none; 
+        padding: 2.5rem;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .tab-content.active {
+        display: block; 
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .tab-intro {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+        text-align: justify;
+    }
+
+    .tab-subtitle {
+        font-weight: bold;
+        color: rgb(var(--black));
+        margin-bottom: 1.5rem;
+    }
+
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .corp-card {
+        background-color: rgba(var(--accent), 0.05);
+        border-left: 4px solid var(--accent);
+        padding: 1.5rem;
+        border-radius: 0 8px 8px 0;
+        transition: transform 0.2s ease;
+    }
+
+    .corp-card:hover {
+        transform: translateX(5px);
+        background-color: rgba(var(--accent), 0.1);
+    }
+
+    .corp-card h4 {
+        color: var(--accent-dark);
+        margin-top: 0;
+        margin-bottom: 0.8rem;
+        font-size: 1.1rem;
+    }
+
+    .corp-card p {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .mt-4 { margin-top: 2.5rem; }
+    
+    .accent-title {
+        color: var(--accent);
+        border-bottom: 1px solid rgba(var(--gray-light), 0.5);
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .check-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .check-list li {
+        position: relative;
+        padding-left: 1.8rem;
+        margin-bottom: 1rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .check-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--accent);
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .cta-corporate {
+        text-align: center;
+        background-color: rgb(var(--gray-light));
+        padding: 3rem 2rem;
+        border-radius: 12px;
+        margin-top: 2rem;
+    }
+
+    .cta-text {
+        font-size: 1.15rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        color: rgb(var(--black));
+    }
+
+    .btn-primary {
+        display: inline-block;
+        background-color: var(--accent);
+        color: white;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .btn-primary:hover {
+        background-color: var(--accent-dark);
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    @media (max-width: 600px) {
+        .tab-btn { padding: 1rem; font-size: 1rem; }
+        .tab-content { padding: 1.5rem; }
+        .intro-block h2 { font-size: 1.8rem; }
+    }
+</style>
